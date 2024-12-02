@@ -6,18 +6,7 @@ function App() {
   const [visible, setVisibility] = useState(false);
   return (
     <div>
-      {visible && (
-        <Alert>
-          Alert!!!
-          <button
-            type="button"
-            className="btn-close"
-            data-bs-dismiss="alert"
-            aria-label="Close"
-            onClick={() => setVisibility(false)}
-          ></button>
-        </Alert>
-      )}
+      {visible && <Alert onClose={() => setVisibility(false)}>Alert!!!</Alert>}
       <Button onClick={() => setVisibility(true)}>hello</Button>
     </div>
   );
