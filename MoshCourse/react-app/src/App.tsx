@@ -1,9 +1,8 @@
-import Alert from "./components/Alert";
-import ListGroup from "./components/ListGroup";
+import Button from "./components/Button";
 function App() {
   return (
     <div>
-      <Alert>hello</Alert>
+      <Button>hello</Button>
     </div>
   );
 }
