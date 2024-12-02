@@ -3,7 +3,7 @@ import ListGroup from "./components/ListGroup";
 function App() {
   return (
     <div>
-      <Alert text="hello" />
+      <Alert>hello</Alert>
     </div>
   );
 }
