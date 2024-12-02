@@ -2,7 +2,7 @@ import Button from "./components/Button";
 function App() {
   return (
     <div>
-      <Button>hello</Button>
+      <Button onClick={() => console.log("clicked")}>hello</Button>
     </div>
   );
 }
