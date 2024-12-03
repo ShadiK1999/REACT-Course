@@ -1,17 +1,10 @@
-import ListGroup from "./components/ListGroup";
+import { FaCalendar } from "react-icons/fa";
 
 function App() {
-  const items = ["NY", "SF", "LA"];
-  let heading = "cities";
-  const handleSelectItem = (item: String) => {
-    console.log(item);
-  };
   return (
-    <ListGroup
-      items={items}
-      heading={heading}
-      onSelectItem={handleSelectItem}
-    ></ListGroup>
+    <div>
+      <FaCalendar color="red" size="40" />
+    </div>
   );
 }
 
