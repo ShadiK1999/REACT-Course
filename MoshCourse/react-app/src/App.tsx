@@ -8,13 +8,7 @@ function App() {
   ]);
 
   const handleClick = () => {
-    //setBugs(bugs.map(bug => bug.id === 1 ? {...bug, fixed: true} : bug))
-    setBugs(
-      produce((draft) => {
-        const bug = draft.find((bug) => bug.id === 1);
-        if (bug) bug.fixed = true;
-      })
-    );
+    setBugs(bugs.map((bug) => (bug.id === 1 ? { ...bug, fixed: true } : bug)));
   };
   return (
     <div>
