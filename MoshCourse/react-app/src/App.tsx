@@ -9,7 +9,7 @@ function App() {
   });
 
   const handleClick = () => {
-    setGame({ ...game, player: { name: "james" } });
+    setGame({ ...game, player: { ...game.player, name: "james" } });
   };
   return (
     <div>
