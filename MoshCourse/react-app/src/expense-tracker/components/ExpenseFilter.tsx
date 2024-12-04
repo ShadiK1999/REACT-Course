@@ -1,5 +1,6 @@
 import React from "react";
-
+import { categories } from "../../App";
+import { optional } from "zod";
 interface Props {
   onSelectCategory: (category: string) => void;
 }
@@ -9,10 +10,12 @@ const ExpenseFilter = ({ onSelectCategory }: Props) => {
       className="form-select"
       onChange={(event) => onSelectCategory(event.target.value)}
     >
-      <option value="">All categories</option>
-      <option value="Food">Food</option>
-      <option value="Utilities">Utilities</option>
-      <option value="Transport">Transport</option>
+      <option value="">All Categories</option>
+      {categories.map((category) => (
+        <option key={category} value={category}>
+          {category}
+        </option>
+      ))}
     </select>
   );
 };
