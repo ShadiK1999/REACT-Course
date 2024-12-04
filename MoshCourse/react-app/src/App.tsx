@@ -1,26 +1,21 @@
 import { useState } from "react";
+import ExpandingChars from "./components/Expandingchars";
 
 function App() {
-  const [cart, setCart] = useState({
-    discount: 0.1,
-    items: [
-      { id: 1, title: "Prod1", quantity: 1 },
-      { id: 2, title: "Prod2", quantity: 1 },
-    ],
-  });
-
-  const handleClick = () => {
-    setCart({
-      ...cart,
-      items: cart.items.map((item) =>
-        item.id === 1 ? { ...item, quantity: 2 } : item
-      ),
-    });
-  };
   return (
-    <div>
-      <button onClick={handleClick}>Update</button>
-    </div>
+    <ExpandingChars>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores ex, ea
+      blanditiis ipsa natus quae, quas eum repellat recusandae doloribus,
+      accusamus magni iste veniam tempore dignissimos nobis alias molestiae
+      suscipit unde soluta? Praesentium accusamus aperiam ipsum similique porro,
+      quae ad repellendus nostrum, magni dolorum sunt doloribus laudantium
+      magnam. Voluptas, fugit. Necessitatibus perspiciatis dolor animi id a
+      possimus aliquid atque accusantium omnis sit rerum at aut sequi obcaecati
+      explicabo ipsum exercitationem sapiente earum iste fuga ut odit, repellat
+      inventore. Qui eum, distinctio quis facilis dignissimos fugiat explicabo
+      excepturi tempore nam. Facilis ea nisi id dolore accusamus asperiores
+      laborum reiciendis aperiam dolorum.
+    </ExpandingChars>
   );
 }
 
