@@ -1,2 +1,2 @@
 # REACT
- This repo contains all completed and ongoing REACT projects
+ This repo contains all completed and ongoing REACT coursework and exercises
